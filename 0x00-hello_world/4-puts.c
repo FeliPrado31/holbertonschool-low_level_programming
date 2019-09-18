@@ -1,9 +1,10 @@
+/**
+ * main - print a string using puts
+ *
+ * Return: Always 0 (Success)
+ */
 #include <stdio.h>
-/*
-* main - print the text with puts
-*
-* return - return always 0
-*/
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
