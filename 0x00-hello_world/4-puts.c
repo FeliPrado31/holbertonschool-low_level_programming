@@ -1,10 +1,9 @@
-/*
-* main - print text with puts
-*
-* return - return 0 always
-*/
 #include <stdio.h>
-
+/*
+* main - print the text with puts
+*
+* return - return always 0
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
