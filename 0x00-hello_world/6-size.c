@@ -1,5 +1,5 @@
 /**
- * main - print a string using puts
+ * main - print the size of char, int, long int, long long int, and float
  *
  * Return: Always 0 (Success)
  */
@@ -7,10 +7,11 @@
 
 int main(void)
 {
-	printf("Size of a char: %ld byte(s)", sizeof(char));
-	printf("Size of an int: %ld byte(s)", sizeof(int));
-	print("Size of a long int: %ld byte(s)", sizeof(long));
-	printf("Size of a long long int: %ld byte(s)", sizeof(long long));
-	printf("Size of a float: %ld byte(s)", sizeof(float));
+	printf("Size of a char: %i byte(s)\n", (int) sizeof(char));
+	printf("Size of an int: %i byte(s)\n", (int) sizeof(int));
+	printf("Size of a long int: %i byte(s)\n", (int) sizeof(long int));
+	printf("Size of a long long int: %i byte(s)\n",
+	       (int) sizeof(long long int));
+	printf("Size of a float: %i byte(s)\n", (int) sizeof(float));
 	return (0);
 }
