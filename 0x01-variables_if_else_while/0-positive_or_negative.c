@@ -3,22 +3,20 @@
 #include <stdio.h>
 
 /**
- * checkNumber - check if a number is positive, negative or zero 
- *
- * number - the int variable to check
- */ 
+ * checkNumber - Check if a number is positive, negative or zero
+ * @number: The int variable to check
+ */
 void checkNumber(int number)
 {
 	if (number > 0)
-		printf("%d the number is positive\n", number);
+		printf("%d is positive\n", number);
 	else if (number == 0)
-		printf("%d the number is zero\n", number);
+		printf("%d is zero\n", number);
 	else
-		printf("%d the number is negative\n", number);
+		printf("%d is negative\n", number);
 }
 /**
- * main - generate a random number
- *
+ * main - Generate a random number
  * Return: Always 0 (Success)
  */
 int main(void)
