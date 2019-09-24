@@ -6,14 +6,11 @@
   */
 void print_alphabet(void)
 {
-	_putchar("H");
-	_putchar("o");
-	_putchar("l");
-	_putchar("b");
-	_putchar("e");
-	_putchar("r");
-	_putchar("t");
-	_putchar("o");
-	_putchar("n");
+	char i;
+
+	for (i = 'a'; i <= 'z'; z++)
+	{
+		_putchar(i);
+	}
 	_putchar('\n');
 }
