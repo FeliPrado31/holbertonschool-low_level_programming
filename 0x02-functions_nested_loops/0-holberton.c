@@ -1,19 +1,19 @@
 #include "holberton.h"
-
 /**
-  * print_alphabet - print alphabet
+  * main - entry block
   * @void: no argument
-  */
-void print_alphabet(void)
+  * Return: 0
+  **/
+int main(void)
 {
-	_putchar("H");
-	_putchar("o");
-	_putchar("l");
-	_putchar("b");
-	_putchar("e");
-	_putchar("r");
-	_putchar("t");
-	_putchar("o");
-	_putchar("n");
+	char holberton[] = "Holberton";
+
+	int c;
+
+	for (c = 0; c < 9; c++)
+	{
+		_putchar(holberton[c]);
+	}
 	_putchar('\n');
+	return (0);
 }
