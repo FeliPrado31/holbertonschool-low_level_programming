@@ -16,7 +16,7 @@ void times_table(void)
 			{
 				_putchar(mult + '0');
 			}
-			else if (k <= 9)
+			else if (mult <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
