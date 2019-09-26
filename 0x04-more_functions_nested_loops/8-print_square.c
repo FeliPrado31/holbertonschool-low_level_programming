@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
+ * print_square - Write a function that prints a square
+ * @size: take an int
  */
 void print_square(int size)
 {
