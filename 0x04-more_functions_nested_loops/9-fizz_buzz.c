@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
+ * main - the fizzbuzz test
  *
- * TODO add the commentaries
- *
- */ 
+ * Return: Nothing
+ */
 int main(void)
 {
 	int i;
