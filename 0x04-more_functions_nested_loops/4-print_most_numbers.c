@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
+ * print_most_numbers - Write a function that prints the numbers, from 0 to 9
+ * @void: no argument
  */
 void print_most_numbers(void)
 {
