@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * mul - mult two numbers 
+ * mul - mult two numbers
  * @a: take an int
  * @b: take an int
  * Return: the mult of the two numbers
