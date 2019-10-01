@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ * array_length - check the long of the string
+ * @s: take an pointer
+ * Return: size of the string
  */
 int array_length(char *s)
 {
@@ -13,7 +13,10 @@ int array_length(char *s)
 		;
 	return (size);
 }
-
+/**
+ * rev_string - Write a function that reverses a string
+ * @s: take a point
+ */
 void rev_string(char *s)
 {
 	int i, size;
