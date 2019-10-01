@@ -23,6 +23,7 @@ void puts_half(char *str)
 	int i, size;
 
 	size = array_length(str);
+	size = size + 1;
 
 	for (i = size / 2; str[i] != '\0'; i++)
 		_putchar(str[i]);
