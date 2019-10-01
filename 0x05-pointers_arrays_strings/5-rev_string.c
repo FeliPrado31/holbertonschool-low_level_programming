@@ -5,11 +5,26 @@
  *
  *
  */
+int array_length(char *s)
+{
+	int size;
+
+	for (size = 0; s[size]; size++)
+		;
+	return (size);
+}
+
 void rev_string(char *s)
 {
-	int i;
+	int i, size;
+	char temp;
 
-	for (i = 0; s[i] != '\0'; i++)
-		_putchar(s[i]);
-	_putchar('\n');
+	size = array_length(s);
+	size = size - 1;
+	for (i = 0; i < size; size--, i++)
+	{
+		temp = s[i];
+		s[i] = s[size];
+		s[size] = temp;
+	}
 }
