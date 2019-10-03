@@ -1,9 +1,7 @@
 #include "holberton.h"
+
 /**
-  * rot13 - encodes string to rot13
-  * @c: takes in a string
-  * Return: the string
-  */
+ */
 char *rot13(char *c)
 {
 	int i, j;
@@ -16,13 +14,9 @@ char *rot13(char *c)
 		for (j = 0; c1[j] != '\0'; j++)
 		{
 			if (c[i] == c1[j])
-			{
 				c[i] = c2[j];
-			}
 			else if (c[i] == c2[j])
-			{
 				c[i] = c1[j];
-			}
 		}
 	}
 	return (c);
