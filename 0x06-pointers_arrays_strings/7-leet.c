@@ -1,7 +1,9 @@
 #include "holberton.h"
 
 /**
- *
+ * leet - function that encodes a string into 1337.
+ * @c: take an string
+ * Return: the text encrypted
  */
 char *leet(char *c)
 {
