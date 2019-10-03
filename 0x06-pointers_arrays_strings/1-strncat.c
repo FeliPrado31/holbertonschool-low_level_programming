@@ -2,7 +2,8 @@
  * The  strcat() function appends the src string to the dest string,
    over-writing the terminating null byte ('\0') at the end of dest,
    and  the adds  a  terminating  null  byte.
-   The strings may not overlap, and the dest string must have enough space for the  result.
+   The strings may not overlap,
+   and the dest string must have enough space for the  result.
    If  dest  is  not large  enough, program behavior is unpredictable;
    buffer overruns are a favorite avenue for attacking secure programs.
  */
@@ -23,7 +24,11 @@ int array_length(char *s)
 	return (size);
 }
 /**
- *
+ * *_strncat - Write a function that concatenates two strings.
+ * @dest: first string
+ * @src: second string
+ * @n: lenght
+ * Return: the string
  */
 char *_strncat(char *dest, char *src, int n)
 {
