@@ -2,6 +2,10 @@
 #include <stdio.h>
 
 /**
+ * _strstr - Write a function that locates a substring.
+ * @haystack: pointer
+ * @needle: pointer
+ * Return: NULL
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -19,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*needle == '\0')
 			return (response);
-		haystack = response++;
+		haystack = response + 1;
 	}
 	return (NULL);
 }
