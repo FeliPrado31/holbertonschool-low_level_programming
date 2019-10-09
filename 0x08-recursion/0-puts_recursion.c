@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- *
+ * _puts_recursion - Write a function that prints a string
+ * @s: pointer of string
  */
 void _puts_recursion(char *s)
 {
