@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- *
+ * _print_rev_recursion - write a function that returns the length a string
+ * @s: pointer of string
  */
 void _print_rev_recursion(char *s)
 {
