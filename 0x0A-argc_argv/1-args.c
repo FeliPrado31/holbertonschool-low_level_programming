@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	argc--;
 	if (argc > 0)
 		printf("%d\n", argc);
+	argc--;
 	return (0);
 }
