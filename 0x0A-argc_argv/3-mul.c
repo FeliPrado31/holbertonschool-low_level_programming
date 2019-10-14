@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- *
+ * main - program that multiplies two numbers.
+ * @argc: takes in arguments
+ * @argv: argument array
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
