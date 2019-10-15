@@ -1,7 +1,10 @@
 #include <stdlib.h>
 
 /**
- *
+ * free_grid - funtion
+ * @grid: pointer
+ * @height: int
+ * Return: free
  */
 void free_grid(int **grid, int height)
 {
