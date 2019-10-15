@@ -22,8 +22,8 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int s1Len, s2Len, totalLen, i;
-	char *str;
+	unsigned int s1Len, s2Len, totalLen;
+	char *str, *strFinal;
 
 	if (s1 == NULL)
 		s1Len = 0;
@@ -35,11 +35,12 @@ char *str_concat(char *s1, char *s2)
 	str = malloc(totalLen + sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < s1Len; i++)
-		str[i] = s1[i];
-	for (i = 0; i < s2Len; i++)
-		str[i + s1Len] = s2[i];
-	str[s1Len + s2Len] = '\0';
-	return (str);
+	strFinal = str;
+	while (*s1)
+		*str++ = *s1++;
+	while (*s2)
+		*str++ = *s2++;
+	*str = '\0';
+	return (strFinal);
 
 }
