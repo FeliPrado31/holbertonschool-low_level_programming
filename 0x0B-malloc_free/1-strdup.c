@@ -15,10 +15,9 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * create_array - creates an array of chars,
- * and initializes it with a specific char.
- * @size: size
- * @c: char
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
+ * Return: pointer
  */
 char *_strdup(char *str)
 {
