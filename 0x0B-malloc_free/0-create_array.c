@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * function that creates an array of chars, and initializes.
+ * create_array - function that creates an array of chars, and initializes.
  * @size: size
  * @c: char
  * Return: ponter to the array
