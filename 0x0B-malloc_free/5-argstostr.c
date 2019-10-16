@@ -15,7 +15,10 @@ int _strlen(char *s)
 }
 
 /**
- *
+ * argstostr - function
+ * @ac: count
+ * @av: pointer
+ * Return: strign
  */
 char *argstostr(int ac, char **av)
 {
