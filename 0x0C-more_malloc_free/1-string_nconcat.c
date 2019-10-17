@@ -13,7 +13,6 @@ int _strlen(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		;
-	i++;
 	return (i);
 }
 
@@ -31,10 +30,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
-	s1Len = _strlen(s1);
+	for (s1Len = 0; s1[s1Len] != '\0'; s1Len++)
+		;
 	if (s2 == NULL)
 		s2 = "";
-	s2Len = _strlen(s2);
+	for (s2Len = 0; s2[s2Len] != '\0'; s2Len++)
+		;
 
 	if (n >= s2Len)
 		;
