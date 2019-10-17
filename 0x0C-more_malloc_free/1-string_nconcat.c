@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
 
@@ -25,21 +26,22 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str, *loQueEllaSientePorTi= "";
+	char *str;
 	unsigned int i, j, s1Len = 0, s2Len = 0;
 
 	if (s1 == NULL)
-		s1 = loQueEllaSientePorTi;
+		s1 = "";
 	s1Len = _strlen(s1);
-
 	if (s2 == NULL)
-		s2 = loQueEllaSientePorTi;
+		s2 = "";
 	s2Len = _strlen(s2);
 
 	if (n >= s2Len)
-		n = s2Len;
+		;
+	else
+		s2Len = n;
 
-	str = malloc(s1Len * sizeof(char) + n + 1);
+	str = malloc(s1Len * sizeof(char) + s2Len + 1);
 	if (str == NULL)
 		return (NULL);
 
