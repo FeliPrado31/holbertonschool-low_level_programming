@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_dog - Write a function that prints a struct dog
- * @
+ * @d: structure
  */
 void print_dog(struct dog *d)
 {
