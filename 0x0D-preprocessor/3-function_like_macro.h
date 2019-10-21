@@ -1,3 +1,4 @@
-#ifndef ABS
-#define ABS(N) ((N<0)?(-N):(N))
+#ifndef ABSMACRO
+#define ABSMACRO
+#define ABS(N) ((N < 0) ? (-N) : (N))
 #endif
