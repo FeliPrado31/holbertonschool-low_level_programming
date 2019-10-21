@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- *
+ * print_dog - Write a function that prints a struct dog
+ * @
  */
 void print_dog(struct dog *d)
 {
@@ -10,11 +11,13 @@ void print_dog(struct dog *d)
 	{
 		if (d->name == NULL)
 			printf("Name: (nill)\n");
-		printf("Name: %s\n", d->name);
+		else
+			printf("Name: %s\n", d->name);
 		printf("Age: %f\n", d->age);
 		if(d->owner == NULL)
 			printf("Owner: (nill)\n");
-		printf("Owner: %s\n", d->owner);
+		else
+			printf("Owner: %s\n", d->owner);
 	}
 	return;
 }
