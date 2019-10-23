@@ -23,10 +23,9 @@ int (*get_op_func(char *s))(int, int)
 	/* compare the operator and return the function  */
 	while (ops[i].op != NULL)
 	{
-		if (strcmp(ops[i].op, s) == 0)
-			return (ops[i].f);
+		if (strcmp(s, ops[i].op) == 0)
+			break;
 		i++;
 	}
-	printf("Error\n");
-	exit(98);
+	return (ops[i].f);
 }
