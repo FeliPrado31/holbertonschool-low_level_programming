@@ -5,9 +5,9 @@
  * @separator: colon
  * @op: argument pointer
  */
-void op_char(char *separator, va_list op)
+void op_char(va_list op)
 {
-	printf("%s%c", separator, va_arg(op, int));
+	printf("%c", va_arg(op, int));
 }
 
 /**
@@ -15,9 +15,9 @@ void op_char(char *separator, va_list op)
  * @separator: colon
  * @op: argument pointer
  */
-void op_int(char *separator, va_list op)
+void op_int(va_list op)
 {
-	printf("%s%d", separator, va_arg(op, int));
+	printf("%d", va_arg(op, int));
 }
 
 /**
@@ -25,9 +25,9 @@ void op_int(char *separator, va_list op)
  * @separator: colon
  * @op: argument pointer
  */
-void op_float(char *separator, va_list op)
+void op_float(va_list op)
 {
-	printf("%s%f", separator, va_arg(op, double));
+	printf("%f", va_arg(op, double));
 }
 
 /**
@@ -35,7 +35,7 @@ void op_float(char *separator, va_list op)
  * @separator: colon
  * @op: argument pointer
  */
-void op_string(char *separator, va_list op)
+void op_string(va_list op)
 {
 	char *str = va_arg(op, char*);
 
@@ -44,7 +44,7 @@ void op_string(char *separator, va_list op)
 		printf("(nil)");
 		return;
 	}
-	printf("%s%s", separator, str);
+	printf("%s", str);
 }
 /**
  * print_all - Write a function that prints anything.
@@ -54,7 +54,6 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j;
 	va_list va;
-	char *separator = "";
 
 	op_t ops[] = {
 		{"c", op_char},
@@ -73,8 +72,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == ops[j].op[0])
 			{
-				ops[j].f(separator, va);
-				separator = ", ";
+				ops[j].f(va);
 			}
 			j++;
 		}
