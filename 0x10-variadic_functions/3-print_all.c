@@ -2,7 +2,6 @@
 
 /**
  * op_char - printf char
- * @separator: colon
  * @op: argument pointer
  */
 void op_char(va_list op)
@@ -12,7 +11,6 @@ void op_char(va_list op)
 
 /**
  * op_int - printf char
- * @separator: colon
  * @op: argument pointer
  */
 void op_int(va_list op)
@@ -22,7 +20,6 @@ void op_int(va_list op)
 
 /**
  * op_float - printf char
- * @separator: colon
  * @op: argument pointer
  */
 void op_float(va_list op)
@@ -32,7 +29,6 @@ void op_float(va_list op)
 
 /**
  * op_string - printf char
- * @separator: colon
  * @op: argument pointer
  */
 void op_string(va_list op)
