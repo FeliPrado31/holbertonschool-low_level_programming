@@ -12,7 +12,7 @@
 typedef struct op
 {
 	char *op;
-	void (*f)(char *, va_list);
+	void (*f)(va_list);
 } op_t;
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);

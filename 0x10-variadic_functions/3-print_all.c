@@ -54,6 +54,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j;
 	va_list va;
+	char *colon = "";
 
 	op_t ops[] = {
 		{"c", op_char},
@@ -72,7 +73,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == ops[j].op[0])
 			{
+				printf("%s", colon);
 				ops[j].f(va);
+				colon = ", ";
+
 			}
 			j++;
 		}
