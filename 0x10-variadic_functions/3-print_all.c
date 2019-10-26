@@ -39,6 +39,11 @@ void op_string(char *separator, va_list op)
 {
 	char *str = va_arg(op, char*);
 
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
 	printf("%s%s", separator, str);
 }
 /**
