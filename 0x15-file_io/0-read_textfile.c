@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * ssize_t - function that reads a text file
+ * and prints it to the POSIX standard output.
+ * @filename: route
+ * @letters: count of letters
+ * Return: Bytes
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
