@@ -22,14 +22,14 @@ int _strlen(char *s)
  * @text_content: text content
  * Return: return
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
     int fd;
     ssize_t bytes = 0, textLen = _strlen(text_content);
 
     if (!filename)
         return (0);
-    fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+    fd = open(filename, O_WRONLY | O_APPEND);
     if (fd == -1)
         return (0);
     if (textLen)
