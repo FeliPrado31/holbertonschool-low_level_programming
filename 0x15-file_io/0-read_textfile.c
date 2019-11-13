@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * ssize_t - function that reads a text file
+ * read_textfile - function that reads a text file
  * and prints it to the POSIX standard output.
  * @filename: route
  * @letters: count of letters
