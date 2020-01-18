@@ -52,7 +52,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((unsigned char *)key, ht->size);
 
-	if (addTheHash(&(ht->array[index]), key, value) == NULL)
+	if (addNode(&(ht->array[index]), key, value) == NULL)
 		return (0);
 
 	return (1);
