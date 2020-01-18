@@ -1,13 +1,13 @@
 #include "hash_tables.h"
 
 /**
- * addTheHash - add node
+ * addNode - add node
  * @stack: stack
  * @key: key
  * @value: store
  * Return: stack
  */
-hash_node_t *addTheHash(hash_node_t **stack, const char *key, const char *value)
+hash_node_t *addNode(hash_node_t **stack, const char *key, const char *value)
 {
 	hash_node_t *node;
 

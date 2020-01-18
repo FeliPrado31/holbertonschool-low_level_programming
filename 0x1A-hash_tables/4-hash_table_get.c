@@ -2,7 +2,7 @@
 
 /**
  * hash_table_get - retrieves a value associated with a key
- * @ht: pointer 
+ * @ht: pointer
  * @key: key
  * Return: value
  */
